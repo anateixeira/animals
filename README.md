@@ -6,6 +6,7 @@ Tecnologias utilizadas:
  - Retrofit
  - Mockito
  - RxJava
+ - Dagger
 
 O projeto exibe uma lista de animais e os detalhes de acordo com o que foi escolhido.
 
