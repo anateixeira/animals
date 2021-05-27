@@ -1,0 +1,41 @@
+<layout>
+
+    <data>
+        <variable
+            name="animalItem"
+            type="br.com.avaty.animals.model.Animal" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/animalLayoutItem"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/animalImage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/animalName"
+            style="@style/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#afff"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@{animalItem.name}"
+            app:layout_constraintBottom_toBottomOf="@+id/animalImage"
+            app:layout_constraintEnd_toEndOf="@+id/animalImage"
+            app:layout_constraintStart_toStartOf="@+id/animalImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

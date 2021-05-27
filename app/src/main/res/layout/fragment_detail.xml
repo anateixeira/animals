@@ -1,0 +1,66 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="animalDetail"
+            type="br.com.avaty.animals.model.Animal" />
+
+        <variable
+            name="palette"
+            type="br.com.avaty.animals.model.AnimalPalette"  />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/animalLayoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@{palette.color}"
+        tools:context=".view.DetailFragment">
+
+        <ImageView
+            android:id="@+id/animalImageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imageUrl="@{animalDetail.imageUrl}"
+            android:minHeight="200dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/animalNameDetail"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@{animalDetail.name}" />
+
+        <TextView
+            android:id="@+id/animalLocationDetail"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@{animalDetail.location}" />
+
+        <TextView
+            android:id="@+id/animalLifespanDetail"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@{animalDetail.lifeSpan}" />
+
+        <TextView
+            android:id="@+id/animalDietDetail"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@{animalDetail.diet}" />
+
+    </LinearLayout>
+</layout>
