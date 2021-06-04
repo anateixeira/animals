@@ -8,5 +8,5 @@ Tecnologias utilizadas:
  - RxJava
  - Dagger
 
-O projeto exibe uma lista de animais e os detalhes de acordo com o que foi escolhido.
+O projeto exibe uma lista de animais e os detalhes de acordo com o que foi clicado.
 
